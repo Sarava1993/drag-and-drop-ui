@@ -1,0 +1,75 @@
+.appLogo {
+  height: 35px;
+}
+
+.customHeader {
+  background-color: white;
+  padding: 5px;
+  display: "flex";
+  align-items: "center";
+  justify-content: "space-between";
+  z-index: 10;
+  width: 100%;
+}
+
+.appTitle {
+  font-size: 1em;
+  font-family: sans-serif;
+  color: #053961;
+  font-weight: bolder;
+}
+
+.appIntro {
+  font-size: large;
+  max-width: 800px;
+  margin: auto;
+  position:"relative";
+  top: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  opacity: 0.8;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+.customFooter ul {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.appTitle span {
+  color: #faa200;
+}
+
+.customFooter ul {
+  font-size: 12px;
+}
+
+.customFooter ul li {
+  font-family: sans-serif;
+  padding: 10px;
+}
+
+.customFooter ul li:hover {
+  color: #faa200;
+  cursor: pointer;
+}
+
+.customFooter {
+  position: fixed;
+  bottom: 0;
+  background-color: #004479;
+  width: 100%;
+  display: flex;
+}
+
