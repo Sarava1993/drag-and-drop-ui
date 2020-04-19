@@ -29,15 +29,39 @@
   border-radius: 5px;
   background-color: white;
   opacity: 0.8;
-  border: 1px solid #ccc;
-  text-align: center;
 }
+
+body {
+  background: url("./utils/agricultureBackdrop.jpg") center/cover;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
 
 html, body {
   height: 100%;
+  overflow:auto;
 }
 
-.customFooter ul {
+.appIntro button.btn.btn-primary:hover{
+  color: #faa200;
+}
+
+.appIntro button.btn.btn-primary{
+  background-color: #004479;
+  border: 0;
+  margin-left: 5px;
+}
+
+.customNavbar {
+  background-color: #004479;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.customNavbar ul, .customFooter ul {
   list-style-type: none;
   color: white;
   display: flex;
@@ -51,16 +75,21 @@ html, body {
   color: #faa200;
 }
 
+.customNavbar div {
+  color: white;
+  padding-left: 25px;
+}
+
 .customFooter ul {
   font-size: 12px;
 }
 
-.customFooter ul li {
+.customNavbar div, .customNavbar ul li, .customFooter ul li {
   font-family: sans-serif;
   padding: 10px;
 }
 
-.customFooter ul li:hover {
+.customNavbar div:hover,.customNavbar ul li:hover, .customFooter ul li:hover {
   color: #faa200;
   cursor: pointer;
 }
@@ -73,3 +102,33 @@ html, body {
   display: flex;
 }
 
+.cardDetailsLabel {
+  color: #004479;
+  font-style: italic;
+}
+
+.cardDetailsConfirm {
+  word-break: break-all;
+}
+
+.cardDetailsConfirm {
+  color: #004479;
+  font-size: 16px;
+  font-style: italic;
+}
+
+.cardDetailsConfirm .label{
+  color: #faa200;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.cardDetailsTitle {
+  color: #faa200;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
